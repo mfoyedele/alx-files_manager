@@ -3,7 +3,7 @@ import { MongoClient } from 'mongodb';
 const HOST = process.env.DB_HOST || 'localhost';
 const PORT = process.env.DB_PORT || 27017;
 const DATABASE = process.env.DB_DATABASE || 'files_manager';
-const url = `mongodb+srv://${HOST}:${PORT}`;
+const url = 'mongodb+srv://musaoyedele3:realfunso@cluster0.71adern.mongodb.net/?retryWrites=true&w=majority' || `${HOST}:${PORT}`;
 
 class DBClient {
   constructor() {
